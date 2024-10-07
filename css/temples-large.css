@@ -1,0 +1,39 @@
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.nav-links.nav-active {
+    display: flex;
+}
+
+.nav-links li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 0 100px;
+    }
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+    }
+    .menu-toggle {
+        display: none;
+    }
+}

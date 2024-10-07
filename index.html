@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo album of temples">
+    <title>Temple Photo Album</title>
+    <link rel="stylesheet" href="css/temples.css">
+    <link rel="stylesheet" href="css/temples-large.css">
+</head>
+<body>
+    <header class="header">
+        <div class="hero">
+            <div class="overlay"></div>
+        </div>
+        <nav class="navbar">
+            <h1 class="logo">Temples</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Temples</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+        <div class="hero-content">
+            <h2>Explore the World's Most Beautiful Temples</h2>
+            <p>Discover ancient architecture, beautiful designs, and the spiritual essence of temples around the globe.</p>
+            <a href="#album" class="cta-btn">View Album</a>
+        </div>
+    </header>
+
+    <main id="album" class="album-section">
+        <h2 class="section-title">Temple Photo Album</h2>
+        <section class="photo-grid">
+            <figure class="photo-item">
+                <img src="img/azul escuro.png" alt="Temple 1">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure class="photo-item">
+                <img src="img/caqui.png" alt="Temple 2">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <figure class="photo-item">
+                <img src="img/uniforme mockup.png" alt="Temple 3">
+                <figcaption>Temple 3</figcaption>
+            </figure>
+            <figure class="photo-item">
+                <img src="img/WK609_BLACK.png" alt="Temple 3">
+                <figcaption>Temple 4</figcaption>
+            </figure>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> - All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Terms of Service</a> | 
+                    <a href="#">Contact</a>
+                </nav>
+                <p>Last updated: <span id="lastUpdated"></span></p>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="js/temples.js"></script>
+</body>
+</html>
