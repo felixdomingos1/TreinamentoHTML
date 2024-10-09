@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Perfil</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .profile-container {
+      position: relative;
+    }
+    .bottons {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      top: 85%;
+      width: 100%;
+      transform: translate(0%, -50%);
+    }
+    .profile-image {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      top: 85%;
+      right: 10px;
+      width: 100%;
+      transform: translate(0%, -50%);
+    }
+    .gradient-button {
+      background: linear-gradient(1deg, #ffffff, #9c9a9a05);
+    }
+    .font{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-4xl mx-auto mb-4 pb-3 bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="relative h-[400px] sm:h-64 md:h-80 lg:h-96">
+      <img src="./felix2.jfif" alt="Cover Image" class="w-full h-full object-cover">
+      <div class="flex mt-4 space-x-4 gradient-button bottons">
+        <div class="flex items-center justify-center h-20 mt-1 w-[100%]">
+          <div class="text-center sm:mt-20">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 font">Felix Domingos</h1>
+            <p class="text-gray-600">@felidom</p>
+          </div>        
+        </div>
+        <div class="flex">
+          <button class="text-white px-3 py-2 ml-2 rounded-full hover:bg-pink-600 transition bg-pink-500">
+            <i class="fas fa-phone-alt"></i>
+          </button>
+          <button class="text-white px-3 py-2 ml-2 rounded-full hover:bg-pink-600 transition bg-pink-500">
+            <i class="fas fa-envelope"></i>
+          </button>
+          <button class="text-white px-3 py-2 ml-2 rounded-full hover:bg-pink-600 transition bg-pink-500">
+            <i class="fas fa-globe"></i>
+          </button>
+        </div>
+        <div class="profile-container">
+          <img src="./felix2.jfif" alt="Profile Image" class="profile-image w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-full border-4 border-white shadow-lg">
+        </div>
+      </div>
+    </div>
+
+      <div class="mt-10 px-4 sm:px-16 lg:px-32 text-gray-800">
+      <h2 class="text-xl font-bold">Informações Pessoais</h2>
+      <div class="mt-4 flex flex-col space-y-4">
+        <div class="flex items-center">
+          <i class="fas fa-map-marker-alt text-pink-500 mr-2"></i>
+          <span>Rua 6, 123, Luanda, Angola</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-phone-alt text-pink-500 mr-2"></i>
+          <span>+244 926-195-572</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-envelope text-pink-500 mr-2"></i>
+          <span>felixsdomingos93@gmail.com</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-globe text-pink-500 mr-2"></i>
+          <span>www.felixdomingos.vercel.app</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-briefcase text-pink-500 mr-2"></i>
+          <span>Desenvolvedor FullStack</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
